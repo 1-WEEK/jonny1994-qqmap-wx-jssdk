@@ -1,5 +1,5 @@
 {
-  "name": "@jonny1994/qqmap-wx-jssdk",
+  "name": "@1-week/qqmap-wx-jssdk",
   "version": "1.4.1",
   "description": "微信小程序 腾讯地图sdk v1.2",
   "main": "qqmap-wx-jssdk.js",
