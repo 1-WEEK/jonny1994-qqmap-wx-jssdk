@@ -1290,6 +1290,16 @@ export interface CalculateDistanceSuccessResult extends CommonResult {
 export type CalculateDistanceMode = "driving" | "walking" | "straight";
 
 /**
+ * 用于计算的点
+ */
+export type CalculateDistancePoint =
+  | {
+      latitude: number;
+      longitude: number;
+    }
+  | string;
+
+/**
  * 距离计算 options
  */
 export interface CalculateDistanceOptions extends CommonOptions {
@@ -1298,6 +1308,9 @@ export interface CalculateDistanceOptions extends CommonOptions {
    * 新增直线距离计算，`straight`（直线）
    */
   mode?: CalculateDistanceMode;
+
+  to: CalculateDistancePoint;
+  from: CalculateDistancePoint;
 
   /**
    * 接口调用成功
