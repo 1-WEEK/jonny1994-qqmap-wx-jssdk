@@ -1309,7 +1309,7 @@ export interface CalculateDistanceOptions extends CommonOptions {
    */
   mode?: CalculateDistanceMode;
 
-  to: CalculateDistancePoint;
+  to: CalculateDistancePoint[];
   from: CalculateDistancePoint;
 
   /**
