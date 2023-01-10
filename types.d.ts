@@ -516,6 +516,11 @@ export interface ReverseGeocoderSuccessResult extends CommonResult {
        */
       water?: ReverseGeocoderSuccessResult["result"]["address_reference"]["famous_area"];
     };
+
+    /**
+     * 逆解析经纬度
+     */
+    location: ResultLocation;
   };
   /**
    * POI数组，对象中每个子项为一个POI对象，返回的POI数量及页数可通过请求参数poi_options设置
